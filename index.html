@@ -1,0 +1,54 @@
+<html><center>
+
+<head>
+	 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+ <script src="/functions.js">
+ </script>
+ <style>
+  <style id="plotly.js-style-global">
+	</style>
+	<style>
+		body {
+			background-image: url("https://farm3.staticflickr.com/2816/12915174523_3686229e9b_b.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			max-width: 1500px;
+		}
+
+		.a {
+			font-family: "Optima", Times, serif;
+			color: Black;
+			font-size: 60px;
+		}
+
+		.b {
+			font-family: "Optima", Times, serif;
+			color: black;
+			font-size: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 id="Heading" class="a" style="text-align:center;"> How are you feeling today?<br>[◕ ‿ ◕♡] </h2>
+	<input type= "date" id="date" 
+  style= "width: 275px; height:120px; font-size:25px; border: 10px dashed Thistle;"
+   > <br> 
+  <p1 id="day" class="b"> Describe your day: 
+  </p1>
+  <br>
+  <textarea type="textarea" id="mooddescribe" style="width: 600px; height:300px; border:10px dashed Thistle; font-size:25px"> </textarea>
+  <br>
+  <p1 id="rater" class="b"> Rate your current mood from 1 to 10, 1 being low and 10 being high: </p1> <br>
+  <input type= "number" id="rateInput" min="1" max="10" style="width: 300px; height:150px; border: 10px dashed Thistle; font-size:45px; text-align:center; "> <br>
+  <br>
+  <br> <br>
+  <button type="button" onclick="buttonboi();" style="width: 200px; height:200px; border: 10px solid Thistle; font-family:Candara; font-size:15px;" >Save today's mood ✾ </button>
+  <button type = "button" onclick = "setuptable(); setupgraph();" style="width: 200px; height:200px; border: 10px solid Thistle; font-family:Candara; font-size:15px;"> Weekly Table </button>
+  <button type = "button" onclick = "setupgraph();" style="width: 200px; height:200px; border: 10px solid Thistle; font-family:Candara; font-size:15px;"> Weekly Graph </button>
+  <div id = "graph"> </div> 
+  <br>
+  <div id = "line" style="width: 600px; height:600px;"> </div>
+</lab></body></center></html>
+
+<p style="font-size: 10 rem; font-style: italic;"><img style="display: block;"><a href="https://suicidepreventionlifeline.org/">"You are not alone"</a><span> 
